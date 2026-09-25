@@ -43,7 +43,7 @@
           <a href="/profile" class="text-decoration-none d-flex align-items-center gap-2" title="Open profile">
             <i class="bi bi-person-circle fs-4" style="color: #fefefe;"></i>
             <span class="text-white fw-medium">
-              profile
+              Profile
             </span>
           </a>
           <form method="POST" action="{{ route('logout') }}" class="m-0">

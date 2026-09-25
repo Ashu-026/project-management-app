@@ -6,7 +6,7 @@
 
 <section class=" my-3">
     <div class="container">
-        <div class="card border-0  shadow-sm  text-white" style="background: linear-gradient(135deg, #811d95 0%, #7c3aed 100%); border-bottom: 2px solid #a78bfa;">
+        <div class="card border-top  shadow-lg  text-white" style="background: linear-gradient(135deg, #811d95 0%, #7c3aed 100%); border-bottom: 2px solid #a78bfa;">
             <div class="card-body d-flex justify-content-between align-items-center">
                 <div class="px-4">
                     <h2 class="fw-bold text-white mb-1">
@@ -25,8 +25,7 @@
 <section>
     <div class="container py-3">
         <div class="card border-0 shadow-sm" style="overflow: hidden;">
-            <div class="card-header d-flex justify-content-between text-dark">
-            </div>
+            
             <div class="card-body p-0">
                 <div class="table-responsive">
                     <table class="table  text-center table-hover align-middle mb-0">

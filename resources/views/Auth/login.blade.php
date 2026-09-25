@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark shadow py-2"style="background: linear-gradient(135deg, #811d95 0%, #7c3aed 100%); border-bottom: 2px solid #a78bfa;">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow py-2" style="background: linear-gradient(135deg, #811d95 0%, #7c3aed 100%); border-bottom: 2px solid #a78bfa;">
             <div class="container align-items-center justify-content-center">
                 <a class="navbar-brand fw-bolder text-light fs-2" href="login.php">
                     <i class="bi bi-kanban-fill text-light me-2"></i>Project-Managment-App
@@ -41,6 +41,15 @@
                         @if (session('success'))
                         <div class="alert alert-success">
                             {{ session('success') }}
+                        </div>
+                        @endif
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
                         </div>
                         @endif
                         <!-- Login Form -->
@@ -79,7 +88,7 @@
                                 <small id="login-password-error" class="text-danger"></small>
                             </div>
                             <button type="submit" name="login"
-                                class="btn  btn-lg w-100 fw-semibold"style="color: #fbfafc; background-color: #7c3aed;">
+                                class="btn  btn-lg w-100 fw-semibold" style="color: #fbfafc; background-color: #7c3aed;">
                                 <i class="bi bi-box-arrow-in-right me-2"></i>Login
                             </button>
                             <button
@@ -123,7 +132,7 @@
                                 <input type="password" id="registerConfirmPassword" name="password_confirmation" class="form-control form-control-lg" placeholder="Confirm your password" autocomplete="new-password" required>
                                 <small id="register-confirm-password-error" class="text-danger"></small>
                             </div>
-                            <button type="submit" name="register" class="btn  btn-lg w-100 fw-semibold"style="color: #fbfafc; background-color: #7c3aed;">
+                            <button type="submit" name="register" class="btn  btn-lg w-100 fw-semibold" style="color: #fbfafc; background-color: #7c3aed;">
                                 Register
                             </button>
                             <button type="button" id="showLoginBtn" class="btn btn-link w-100 mt-2 text-decoration-none"> Already have an account? Login
